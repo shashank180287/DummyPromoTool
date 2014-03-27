@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>PromoToolLoadData</servlet-name>
+		<servlet-class>com.mobile.tool.promo.dummy.controller.PromoToolLoadData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PromoToolLoadData</servlet-name>
+		<url-pattern>/plugin/loaddata</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SubCategoriesLoad</servlet-name>
+		<servlet-class>com.mobile.tool.promo.dummy.controller.SubCategoryLoadData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SubCategoriesLoad</servlet-name>
+		<url-pattern>/plugin/subcategory/*</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>SearchedItemsData</servlet-name>
+		<servlet-class>com.mobile.tool.promo.dummy.controller.SearchedItemsData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchedItemsData</servlet-name>
+		<url-pattern>/plugin/inventory/search</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>RequestTypesData</servlet-name>
+		<servlet-class>com.mobile.tool.promo.dummy.controller.RequestTypesData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RequestTypesData</servlet-name>
+		<url-pattern>/plugin/requestintr/types</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>RequestProcessorSelection</servlet-name>
+		<servlet-class>com.mobile.tool.promo.dummy.controller.RequestProcessorSelectionData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RequestProcessorSelection</servlet-name>
+		<url-pattern>/plugin/requestintr/processordetails/*</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>RequestSubmit</servlet-name>
+		<servlet-class>com.mobile.tool.promo.dummy.controller.RequestSubmitResponse</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RequestSubmit</servlet-name>
+		<url-pattern>/plugin/requestintr/</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>ToolStatusTrackerData</servlet-name>
+		<servlet-class>com.mobile.tool.promo.dummy.controller.ToolStatusTrackerData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ToolStatusTrackerData</servlet-name>
+		<url-pattern>/plugin/tracker/status</url-pattern>
+	</servlet-mapping>	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
